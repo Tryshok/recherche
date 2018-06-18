@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Hotspots</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h3>Hotspots</h3>
+    <ion-card *ngFor="let hotspot of hotspotNetworks">
+        <ion-card-header>
+            {{ hotspot.SSID }}
+        </ion-card-header>
+        <ion-card-content>
+            <div style="font-size: 20px;">
+            <!--<strong>BSSID</strong>: {{ hotspot.BSSID }}
+            <br>-->
+            <strong>Frequency</strong>: {{ hotspot.frequency }} MHz
+            <br>
+            <strong>Level</strong>: {{ hotspot.level }} dBm
+            <!--<br>
+            <strong>Timestamp</strong>: {{ hotspot.timestamp }}-->
+            <br>
+            <strong>Capabilities</strong>: {{ hotspot.capabilities }}
+            <br>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Gyroscope</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h3>Gyroscope</h3>
+    <ion-card>
+        <ion-card-header>
+            Data
+        </ion-card-header>
+        <ion-card-content>
+            <div style="font-size: 20px;">
+            <strong>orientation.x : </strong> {{ orientationDevice.x | number : '1.3-3'}}
+            <br>
+            <strong>orientation.y : </strong> {{ orientationDevice.y | number : '1.3-3'}}
+            <br>
+            <strong>orientation.z : </strong> {{ orientationDevice.z | number : '1.3-3'}}
+            <br>
+            </div>
+            <br>
+            The gyrometer detects an acceleration of the rotation around an axis.
+            <br>
+            It measures either changes in orientation (angular motion) or changes in rotational speed.
+        </ion-card-content>
+    </ion-card>
+</ion-content>

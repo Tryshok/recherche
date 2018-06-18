@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Host ping</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h3>Host ping</h3>
+    <ion-card>
+        <ion-card-content>
+            <div style="font-size: 20px;">
+            <strong>Host name</strong>:{{ hotspotConnectionInfo.SSID }}
+            <br>
+            <strong>IP address</strong>:{{ hotspotConnectionInfo.IPAddress }}
+            <br>
+            <strong>Ping</strong>:{{ ping.stat.time | json}} ms
+            <br>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

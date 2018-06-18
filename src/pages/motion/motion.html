@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Motion</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h3>Device Motion</h3>
+    <ion-card>
+        <ion-card-header>
+            <div style="font-size: 20px;">
+            Accelerations  
+            <br>
+            (Gravity hasn't been withdrawn.)  
+            </div>        
+        </ion-card-header>
+        <ion-card-content>   
+            <div style="font-size: 20px;">  
+            <strong>axe X : </strong> {{ accelerationDevice.x | number : '1.3-3'}} m/s²
+            <br>
+            <strong>axe Y : </strong> {{ accelerationDevice.y | number : '1.3-3'}} m/s²
+            <br>
+            <strong>axe Z : </strong> {{ accelerationDevice.z | number : '1.3-3'}} m/s²
+            <br>
+            </div>
+        </ion-card-content>
+        <ion-card-header>
+            <div style="font-size: 20px;">
+            Speeds
+            <br>
+            (Gravity hasn't been withdrawn.)    
+             </div>
+        </ion-card-header>
+        <ion-card-content>
+            <div style="font-size: 20px;">
+            <strong>axe X : </strong> {{ vitesseReelX | number : '1.3-3'}} m/s
+            <br>
+            <strong>axe Y : </strong> {{ vitesseReelY | number : '1.3-3'}} m/s
+            <br>
+            <strong>axe Z : </strong> {{ vitesseReelZ | number : '1.3-3'}} m/s
+            <br>
+             </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
